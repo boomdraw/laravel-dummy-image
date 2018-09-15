@@ -20,29 +20,10 @@ DummyImage::toBase64($code, $headers);
 ## Installation
 ### Laravel
 
-This package can be used in Laravel 5.4 or higher.
-
 You can install the package via composer:
 
 ``` bash
 composer require boomdraw/laravel-dummy-image
-```
-
-In Laravel 5.5 the service provider will automatically get registered. In older versions of the framework just add the service provider in `config/app.php` file:
-
-```php
-'providers' => [
-    // ...
-    BoomDraw\DummyImage\DummyImageServiceProvider::class,
-];
-```
-
-And add a class aliases to the aliases array of config/app.php:
-```php
-'aliases' => [
-    // ...
-    'DummyImage' => BoomDraw\DummyImage\Facades\DummyImage::class,
-];
 ```
 
 You can publish the config file with:
